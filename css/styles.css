@@ -464,3 +464,187 @@ body{
     width: 180px;
   }
 }
+
+
+/* ===== Partner page: Nexa-style layout ===== */
+.partner-repeat{
+  margin: 10px 0 22px;
+  color:#111;
+  opacity:.75;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+.partner-kicker{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.partner-hr{
+  margin: 14px auto 0;
+  width: min(820px, 92vw);
+  height: 1px;
+  background: #e9e9e9;
+}
+
+.partner-grid{
+  display:grid;
+  grid-template-columns: 420px 1fr;
+  gap: 44px;
+  align-items:start;
+}
+
+.partner-image img{
+  width: 100%;
+  height: auto;
+  display:block;
+  border-radius: 4px;
+}
+
+.partner-content h3{
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.partner-content p{
+  margin: 0 0 16px;
+  color:#333;
+}
+
+.partner-bullets{
+  margin: 0 0 18px;
+  padding-left: 18px;
+  color:#333;
+}
+
+.partner-bullets li{
+  margin: 10px 0;
+}
+
+.partner-section{
+  padding-top: 44px;
+}
+
+.partner-section__title{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.partner-section__hr{
+  margin: 12px 0 22px;
+  height: 1px;
+  background: #e9e9e9;
+}
+
+/* Safety layout */
+.partner-safety-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items:start;
+}
+
+.partner-card{
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  padding: 18px;
+  background:#fff;
+}
+
+.partner-card__icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 10px;
+}
+
+.partner-card__icon svg,
+.partner-callout__icon svg,
+.partner-measure__icon svg{
+  width: 22px;
+  height: 22px;
+  fill: #0f2a18;
+}
+
+.partner-steps{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color:#333;
+}
+
+.partner-steps li{ margin: 10px 0; }
+
+.partner-callouts{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.partner-callout{
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+  background:#fff;
+  display:flex;
+  gap: 12px;
+}
+
+.partner-callout__icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex: 0 0 auto;
+}
+
+.partner-callout p{
+  margin: 0;
+  color:#333;
+}
+
+/* Preventative measures cards */
+.partner-measures{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.partner-measure{
+  border: 1px solid #e9e9e9;
+  border-radius: 14px;
+  padding: 16px;
+  background:#fff;
+}
+
+.partner-measure__icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 10px;
+}
+
+.partner-measure p{
+  margin: 0;
+  color:#333;
+}
+
+@media (max-width: 980px){
+  .partner-grid{ grid-template-columns: 1fr; }
+  .partner-safety-grid{ grid-template-columns: 1fr; }
+  .partner-measures{ grid-template-columns: 1fr; }
+}
+
