@@ -266,8 +266,8 @@ body{
   border-radius: 6px;
   background: #0b0b0b;
   display:flex;
-  align-items:center;
-  justify-content:center;
+  align-items:left;
+  justify-content:right;
   padding: 18px;
 }
 .about-imageFrame img{
