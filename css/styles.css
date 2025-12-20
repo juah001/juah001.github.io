@@ -648,3 +648,42 @@ body{
   .partner-measures{ grid-template-columns: 1fr; }
 }
 
+/* Partner page – reduce top logo size */
+.page-top__logo{
+  width: 88px;       /* was ~120px */
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.partner-image img{
+  max-width: 360px;  /* keeps image compact */
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.partner-card__icon,
+.partner-callout__icon,
+.partner-measure__icon{
+  width: 36px;     /* was 44px */
+  height: 36px;
+  border-radius: 10px;
+}
+
+.partner-card__icon svg,
+.partner-callout__icon svg,
+.partner-measure__icon svg{
+  width: 18px;     /* was ~22px */
+  height: 18px;
+}
+.partner-block{
+  margin-bottom: 26px; /* tighter vertical rhythm */
+}
+
+.partner-block h3{
+  font-size: 17px;     /* slightly smaller headings */
+}
+.page-top__headline{
+  font-size: 30px;   /* softer headline scale */
+}
+
+
