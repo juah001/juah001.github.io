@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atlas Housing Group — Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Atlas Housing Group logo" />
+    </a>
+
+    <nav class="nav-center" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listings.html">Available Listings</a>
+      <a href="partner.html">Partner With Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-right" aria-label="Utilities">
+      <a href="contact.html" title="Contact">✉️</a>
+      <a href="partner.html" title="Partner">🤝</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-top">
+    <div class="page-top__inner">
+      <img class="page-top__logo" src="assets/logo.png" alt="Atlas Housing Group logo">
+      <h1 class="page-top__headline">Contact</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 30px;">
+    <div class="container">
+      <div class="page-title">
+        <h2>Get in touch</h2>
+        <div class="page-title__underline"></div>
+      </div>
+      <p class="lead">Inquiries for stays, partnerships, or property management — reach out below.</p>
+
+      <form class="home-subscribe__form" method="POST" action="https://formsubmit.co/your-email@example.com" style="justify-content:flex-start;">
+        <input class="home-subscribe__input" type="text" name="name" placeholder="Full name" required style="width:min(520px, 90vw);" />
+        <input class="home-subscribe__input" type="email" name="email" placeholder="Email address" required style="width:min(520px, 90vw);" />
+        <input class="home-subscribe__input" type="text" name="subject" placeholder="Subject" style="width:min(520px, 90vw);" />
+        <textarea class="home-subscribe__input" name="message" placeholder="Tell us what you’re looking for..." required style="width:min(760px, 95vw); height:140px;"></textarea>
+        <button class="home-subscribe__btn" type="submit">SEND</button>
+      </form>
+
+      <div style="margin-top:28px;">
+        <h3 style="margin:0 0 10px;">Location</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Tampa+Florida,FL&output=embed"
+          width="100%"
+          height="320"
+          style="border:0;border-radius:14px;"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Atlas Housing Group. All rights reserved.</p>
+    <p class="small-muted">Luxury modern stays • White-glove service</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

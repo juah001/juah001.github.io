@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atlas Housing Group — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Atlas Housing Group logo" />
+    </a>
+
+    <nav class="nav-center" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listings.html">Available Listings</a>
+      <a href="partner.html">Partner With Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-right" aria-label="Utilities">
+      <a href="contact.html" title="Contact">✉️</a>
+      <a href="partner.html" title="Partner">🤝</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="home-hero" id="home">
+    <div class="home-hero__left">
+      <div class="home-hero__inner">
+        <img src="assets/logo.png" alt="Atlas Housing Group" class="home-hero__mark" />
+        <h1 class="home-hero__title">Where travel meets<br>modern<br>connection.</h1>
+      </div>
+    </div>
+    <div class="home-hero__right">
+      <img src="assets/gallery4.webp" alt="Atlas modern exterior" class="home-hero__image" />
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="container">
+      <div class="home-why__header">
+        <h2>Why Atlas?</h2>
+        <div class="home-why__underline"></div>
+      </div>
+      <div class="home-why__grid">
+        <div>
+          <img src="assets/gallery3.webp" alt="Atlas interior" class="home-why__image" />
+        </div>
+        <div class="home-why__content">
+          <p>
+            At Atlas, we blend the luxury of modern living with the pulse of global connections. Designed especially for the traveling entrepreneur,
+            our properties offer more than just a stay; they're a gateway to a vibrant community of like-minded professionals.
+          </p>
+          <p>
+            Dive into meticulously curated spaces that prioritize safety and quality, and experience a world where every journey feels like coming home.
+            With Atlas, you're not just booking an accommodation; you're embracing a lifestyle. Discover the Atlas difference.
+          </p>
+          <div class="listing-actions" style="margin-top:14px;">
+            <a class="btn btn-primary" href="listings.html">View Listings</a>
+            <a class="btn btn-accent" href="partner.html">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-subscribe" id="subscribe">
+    <div class="container">
+      <h2 class="home-subscribe__title">Subscribe</h2>
+      <p class="home-subscribe__subtitle">Sign up to hear about our new listings.</p>
+      <form class="home-subscribe__form" method="POST" action="#">
+        <input class="home-subscribe__input" type="email" name="email" placeholder="Email Address" required />
+        <button class="home-subscribe__btn" type="submit">SIGN UP</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Atlas Housing Group. All rights reserved.</p>
+    <p class="small-muted">Luxury modern stays • White-glove service</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
