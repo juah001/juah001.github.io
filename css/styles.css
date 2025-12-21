@@ -781,17 +781,5 @@ body{
   gap:10px;
 }
 
-/* ===== Gallery 4 special styling ===== */
-.listing-gallery4 .listing-title{
-  margin: 0 0 8px;
-  font-size: 15px;
-  letter-spacing: .02em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
 
-/* Optional visual emphasis */
-.listing-gallery4 img{
-  border: 2px solid #c9a23a; /* Atlas gold accent */
-}
 
