@@ -116,10 +116,10 @@ body{
   text-align:center;
 }
 .home-hero__mark{
-  width: 120px;
+  width: 90px;
   height:auto;
   display:block;
-  margin: 0 auto 22px;
+  margin-bottom: 24px;
 }
 .home-hero__title{
   margin:0;
@@ -805,24 +805,6 @@ body{
 .measure:hover{
   transform: translateY(-3px);
   transition: .25s ease;
-}
-
-/* ===== Home Hero: Increase Logo Size Only ===== */
-.home-hero__mark{
-  width: 90px;        /* ⬅ increase size here */
-  height: auto;
-  margin-bottom: 24px;
-}
-
-/* Responsive adjustment */
-@media (max-width: 768px){
-  .home-hero__mark{
-    width: 72px;
-  }
-}
-
-.home-hero__mark{
-  width: 110px;
 }
 
 
