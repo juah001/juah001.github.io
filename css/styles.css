@@ -781,5 +781,32 @@ body{
   gap:10px;
 }
 
+/* ===== Partner Security Device Images ===== */
+.measure-image{
+  width: 100%;
+  max-width: 240px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Center images inside card */
+.measure{
+  text-align: left;
+}
+
+@media (max-width: 768px){
+  .measure-image{
+    max-width: 200px;
+  }
+}
+
+.measure:hover{
+  transform: translateY(-3px);
+  transition: .25s ease;
+}
+
+
 
 
