@@ -819,7 +819,7 @@ body{
 /* Image should stand alone */
 .about-logo-icon{
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
   height: auto;
   display: block;
   border-radius: 6px;        /* optional, remove if not desired */
