@@ -807,4 +807,22 @@ body{
   transition: .25s ease;
 }
 
+/* ===== About Page: Remove Black Background ===== */
+.about-logo-panel{
+  background: transparent;   /* removes black */
+  padding: 0;                /* removes boxed feel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image should stand alone */
+.about-logo-icon{
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 6px;        /* optional, remove if not desired */
+}
+
 
