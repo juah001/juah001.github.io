@@ -808,47 +808,57 @@ body{
 }
 
 
-/* ===== Home Intro (Large Logo) ===== */
-.home-intro{
-  padding: 90px 0 80px;
+/* ===== Home Background Hero ===== */
+.home-hero-bg{
+  position: relative;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay for readability */
+.home-hero-bg__overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-bg__inner{
   text-align: center;
-  background: #ffffff;
+  padding: 40px 20px;
 }
 
-.home-intro__inner{
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.home-intro__logo{
-  width: 120px;      /* ⬅ main size control */
+/* Large centered logo */
+.home-hero-bg__logo{
+  width: 140px;
   height: auto;
   margin-bottom: 28px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.4));
 }
 
-.home-intro__headline{
+/* Headline styling */
+.home-hero-bg__headline{
   margin: 0;
-  font-size: 44px;
+  color: #fff;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: .01em;
-  color: #000;
 }
 
-/* Responsive adjustment */
+/* Responsive */
 @media (max-width: 768px){
-  .home-intro__logo{
-    width: 90px;
+  .home-hero-bg__logo{
+    width: 100px;
   }
 
-  .home-intro__headline{
+  .home-hero-bg__headline{
     font-size: 34px;
   }
 }
-
-.home-intro__logo{
-  width: 150px;  /* or 180px for dramatic hero */
-}
-
 
 
