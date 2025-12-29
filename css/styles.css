@@ -116,10 +116,10 @@ body{
   text-align:center;
 }
 .home-hero__mark{
-  width: 90px;
+  width: 220px;
   height:auto;
   display:block;
-  margin-bottom: 24px;
+  margin: 0 auto 22px;
 }
 .home-hero__title{
   margin:0;
