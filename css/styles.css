@@ -861,4 +861,67 @@ body{
   }
 }
 
+/* ===== Home Split Hero ===== */
+.home-split-hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+}
+
+/* LEFT */
+.home-split-hero__left{
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-split-hero__content{
+  text-align: center;
+  max-width: 420px;
+  padding: 40px 20px;
+}
+
+/* ⬆️ LOGO MADE SLIGHTLY BIGGER */
+.home-split-hero__logo{
+  width: 82px;      /* was ~64px */
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.home-split-hero__headline{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #000;
+}
+
+/* RIGHT */
+.home-split-hero__right{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .home-split-hero{
+    grid-template-columns: 1fr;
+  }
+
+  .home-split-hero__right{
+    min-height: 50vh;
+  }
+
+  .home-split-hero__logo{
+    width: 68px;
+  }
+
+  .home-split-hero__headline{
+    font-size: 34px;
+  }
+}
+
+
 
