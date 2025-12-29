@@ -808,5 +808,47 @@ body{
 }
 
 
+/* ===== Home Intro (Large Logo) ===== */
+.home-intro{
+  padding: 90px 0 80px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.home-intro__inner{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-intro__logo{
+  width: 120px;      /* ⬅ main size control */
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.home-intro__headline{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: .01em;
+  color: #000;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px){
+  .home-intro__logo{
+    width: 90px;
+  }
+
+  .home-intro__headline{
+    font-size: 34px;
+  }
+}
+
+.home-intro__logo{
+  width: 150px;  /* or 180px for dramatic hero */
+}
+
 
 
