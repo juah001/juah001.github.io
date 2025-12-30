@@ -41,9 +41,9 @@ body{
 }
 
 .brand img{
-  height: 84px;
+  height: 100px;
   width:auto;
-  display:block;
+  display:flex;
 }
 
 .nav-center{
