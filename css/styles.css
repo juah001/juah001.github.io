@@ -128,8 +128,8 @@ body{
   line-height: 1.15;
 }
 .home-hero__right{
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .home-hero__image{
   width:100%;
