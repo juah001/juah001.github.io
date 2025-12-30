@@ -827,20 +827,10 @@ body{
 
 /* ===== Header Logo Size ===== */
 .site-header .brand img{
-  height: 56px;      /* ⬅ increase size */
+  height: 64px;      /* ⬅ increase size */
   width: auto;
 }
 
-.site-header .brand img{
-  height: 56px;
-  width: auto;
-}
-
-@media (max-width: 768px){
-  .site-header .brand img{
-    height: 42px;
-  }
-}
 
 
 
