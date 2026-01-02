@@ -46,13 +46,47 @@
       </div>
       <p class="lead">Inquiries for stays, partnerships, or property management — reach out below.</p>
 
-      <form class="home-subscribe__form" method="POST" action="https://formsubmit.co/your-email@example.com" style="justify-content:flex-start;">
+      <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/success.html"
+>
+  <!-- Hidden field required by Netlify -->
+  <input type="hidden" name="form-name" value="contact" />
+
+  <!-- Honeypot field (spam protection) -->
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" required />
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" required />
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+     <!-- <form class="home-subscribe__form" method="POST" action="https://formsubmit.co/your-email@example.com" style="justify-content:flex-start;">
         <input class="home-subscribe__input" type="text" name="name" placeholder="Full name" required style="width:min(520px, 90vw);" />
         <input class="home-subscribe__input" type="email" name="email" placeholder="Email address" required style="width:min(520px, 90vw);" />
         <input class="home-subscribe__input" type="text" name="subject" placeholder="Subject" style="width:min(520px, 90vw);" />
         <textarea class="home-subscribe__input" name="message" placeholder="Tell us what you’re looking for..." required style="width:min(760px, 95vw); height:140px;"></textarea>
         <button class="home-subscribe__btn" type="submit">SEND</button>
       </form>
+      -->
 
       <div style="margin-top:28px;">
         <h3 style="margin:0 0 10px;">Location</h3>
