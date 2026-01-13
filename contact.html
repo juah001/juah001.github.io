@@ -51,27 +51,25 @@
     <!--<p class="contact-subtitle">Send Message</p> -->
 
     <!-- Netlify Form (activated) -->
-    <form
-      class="contact-form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="/success.html"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <p class="hidden-field">
-        <label>Don’t fill this out: <input name="bot-field" /></label>
-      </p>
+ <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/success.html"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-      <input class="contact-input" type="text" name="name" placeholder="Name" required />
-      <input class="contact-input" type="email" name="email" placeholder="Email*" required />
-      <textarea class="contact-textarea" name="message" placeholder="Tell us about your dream stay!" rows="7" required></textarea>
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
 
-      <!-- Optional: Netlify reCAPTCHA (if you enable it) -->
-      <!-- <div data-netlify-recaptcha="true" class="recaptcha"></div> -->
-      <button class="btn btn-contact" type="submit">SEND</button>
-    </form>
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="email" name="email" placeholder="Email*" required />
+  <textarea name="message" placeholder="Tell me about your stay!" rows="7" required></textarea>
+
+  <button type="submit" class="btn btn-contact">SEND</button>
+</form>
 
     <div class="contact-footer">
       <h3>Atlas</h3>
