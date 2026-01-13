@@ -32,7 +32,7 @@
 </header>
 
 <main>
- <!-- CONTACT (Nexa-style layout) -->
+<!-- CONTACT (Nexa-style layout) -->
 <section class="contact-hero">
   <div class="container contact-hero__inner">
     <!-- Top logo/mark -->
@@ -52,9 +52,11 @@
 
     <!-- Netlify Form (activated) -->
     <form
+      class="contact-form"
       name="contact"
       method="POST"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       action="/success.html"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -62,16 +64,14 @@
         <label>Don’t fill this out: <input name="bot-field" /></label>
       </p>
 
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="email" placeholder="Email*" required />
-      <textarea name="message" placeholder="Tell me about your dream stay!" required></textarea>
+      <input class="contact-input" type="text" name="name" placeholder="Name" required />
+      <input class="contact-input" type="email" name="email" placeholder="Email*" required />
+      <textarea class="contact-textarea" name="message" placeholder="Tell me about your dream stay!" rows="7" required></textarea>
 
       <!-- Optional: Netlify reCAPTCHA (if you enable it) -->
       <!-- <div data-netlify-recaptcha="true" class="recaptcha"></div> -->
-
-      <button type="submit">SEND</button>
+      <button class="btn btn-contact" type="submit">SEND</button>
 </form>
-
     <div class="contact-footer">
       <h3>Atlas</h3>
       <p class="contact-footer__email">atlashousing.group@gmail.com</p>
