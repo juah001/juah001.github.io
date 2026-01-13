@@ -32,7 +32,7 @@
 </header>
 
 <main>
-  <!-- CONTACT (Nexa-style layout) -->
+ <!-- CONTACT (Nexa-style layout) -->
 <section class="contact-hero">
   <div class="container contact-hero__inner">
     <!-- Top logo/mark -->
@@ -48,27 +48,28 @@
       <div class="page-title__underline"></div>
     </div>
 
-    <!--<p class="contact-subtitle">Send Message</p> -->
+    <p class="contact-subtitle">Send Message</p>
 
     <!-- Netlify Form (activated) -->
- <form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/success.html"
->
-  <input type="hidden" name="form-name" value="contact" />
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/success.html"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden-field">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
 
-  <p style="display:none;">
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email*" required />
+      <textarea name="message" placeholder="Tell me about your dream stay!" required></textarea>
 
-  <input type="text" name="name" placeholder="Name" required />
-  <input type="email" name="email" placeholder="Email*" required />
-  <textarea name="message" placeholder="Tell me about your stay!" rows="7" required></textarea>
+      <!-- Optional: Netlify reCAPTCHA (if you enable it) -->
+      <!-- <div data-netlify-recaptcha="true" class="recaptcha"></div> -->
 
-  <button type="submit" class="btn btn-contact">SEND</button>
+      <button type="submit">SEND</button>
 </form>
 
     <div class="contact-footer">
