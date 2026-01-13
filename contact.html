@@ -32,7 +32,61 @@
 </header>
 
 <main>
-  <section class="page-top">
+  <!-- CONTACT (Nexa-style layout) -->
+<section class="contact-hero">
+  <div class="container contact-hero__inner">
+    <!-- Top logo/mark -->
+    <img src="assets/logo-icon.svg" alt="Atlas Housing Group" class="contact-hero__mark" />
+    <p class="contact-hero__tagline">Where travel meets modern connection.</p>
+  </div>
+</section>
+
+<section class="contact-wrap">
+  <div class="container">
+    <div class="page-title page-title--center">
+      <h1>Contact Atlas</h1>
+      <div class="page-title__underline"></div>
+    </div>
+
+    <p class="contact-subtitle">Send Message</p>
+
+    <!-- Netlify Form (activated) -->
+    <form
+      class="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/success.html"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden-field">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <input class="contact-input" type="text" name="name" placeholder="Name" required />
+      <input class="contact-input" type="email" name="email" placeholder="Email*" required />
+      <textarea class="contact-textarea" name="message" placeholder="Tell me about your dream stay!" rows="7" required></textarea>
+
+      <!-- Optional: Netlify reCAPTCHA (if you enable it) -->
+      <!-- <div data-netlify-recaptcha="true" class="recaptcha"></div> -->
+
+      <button class="btn btn-contact" type="submit">SEND</button>
+
+      <p class="contact-note">
+        This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+      </p>
+    </form>
+
+    <div class="contact-footer">
+      <h3>Atlas</h3>
+      <p class="contact-footer__email">hello@atlashousing.com</p>
+      <p class="contact-footer__phone">+1 (555) 555-5555</p>
+    </div>
+  </div>
+</section>
+
+ <!-- <section class="page-top">
     <div class="page-top__inner">
       <h1 class="page-top__headline">Contact</h1>
     </div>
@@ -53,10 +107,10 @@
   netlify-honeypot="bot-field"
   action="/success.html"
 >
-  <!-- Hidden field required by Netlify -->
+  -- Hidden field required by Netlify 
   <input type="hidden" name="form-name" value="contact" />
 
-  <!-- Honeypot field (spam protection) -->
+  -- Honeypot field (spam protection) 
   <p style="display:none;">
     <label>Don’t fill this out: <input name="bot-field" /></label>
   </p>
@@ -79,14 +133,14 @@
   <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
 
-     <!-- <form class="home-subscribe__form" method="POST" action="https://formsubmit.co/your-email@example.com" style="justify-content:flex-start;">
+     <form class="home-subscribe__form" method="POST" action="https://formsubmit.co/your-email@example.com" style="justify-content:flex-start;">
         <input class="home-subscribe__input" type="text" name="name" placeholder="Full name" required style="width:min(520px, 90vw);" />
         <input class="home-subscribe__input" type="email" name="email" placeholder="Email address" required style="width:min(520px, 90vw);" />
         <input class="home-subscribe__input" type="text" name="subject" placeholder="Subject" style="width:min(520px, 90vw);" />
         <textarea class="home-subscribe__input" name="message" placeholder="Tell us what you’re looking for..." required style="width:min(760px, 95vw); height:140px;"></textarea>
         <button class="home-subscribe__btn" type="submit">SEND</button>
       </form>
-      -->
+      
 
       <div style="margin-top:28px;">
         <h3 style="margin:0 0 10px;">Location</h3>
@@ -100,14 +154,16 @@
       </div>
     </div>
   </section>
+  -->
 </main>
 
-<footer class="site-footer">
+<!--<footer class="site-footer">
   <div class="container footer-inner">
     <p>© <span id="year"></span> Atlas Housing Group. All rights reserved.</p>
     <p class="small-muted">Luxury modern stays • White-glove service</p>
   </div>
 </footer>
+  -->
 <script src="js/main.js"></script>
 </body>
 </html>
