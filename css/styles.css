@@ -1002,7 +1002,7 @@ body{
 }
 
 /* ========================================
-   Modern Travelers — 2 Column Layout
+   Modern Travelers — Image Left Layout
 ======================================== */
 
 .modern-travelers{
@@ -1017,7 +1017,16 @@ body{
   align-items: center;
 }
 
-/* LEFT SIDE */
+/* reverse layout */
+.modern-travelers__grid--reverse{
+  direction: ltr; /* keeps text normal */
+}
+
+/* TEXT */
+.modern-travelers__content{
+  max-width: 520px;
+}
+
 .modern-travelers__title{
   font-size: 32px;
   font-weight: 700;
@@ -1033,14 +1042,14 @@ body{
 
 .modern-travelers__list{
   padding-left: 18px;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
-/* RIGHT SIDE */
+/* IMAGE */
 .modern-travelers__image-wrap{
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0,0,0,.08);
+  box-shadow: 0 14px 40px rgba(0,0,0,.10);
 }
 
 .modern-travelers__image{
@@ -1050,7 +1059,7 @@ body{
   display: block;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 900px){
   .modern-travelers__grid{
     grid-template-columns: 1fr;
@@ -1061,7 +1070,3 @@ body{
     height: 260px;
   }
 }
-
-
-
-
