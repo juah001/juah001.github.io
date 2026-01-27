@@ -71,6 +71,48 @@
     </div>
   </section>
 
+  <!-- SUBSCRIBE (Netlify Active) -->
+<section class="subscribe-section">
+  <div class="container subscribe-inner">
+
+    <h2 class="subscribe-title">Subscribe</h2>
+    <p class="subscribe-subtitle">
+      Sign up to hear about our new listings.
+    </p>
+
+    <form
+      name="subscribe"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="success.html"
+      class="subscribe-form"
+    >
+      <!-- Required for Netlify -->
+      <input type="hidden" name="form-name" value="subscribe" />
+
+      <!-- Spam protection -->
+      <p style="display:none;">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        class="subscribe-input"
+      />
+
+      <button type="submit" class="btn btn-dark">
+        SIGN UP
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!--
   <section class="home-subscribe" id="subscribe">
     <div class="container">
       <h2 class="home-subscribe__title">Subscribe</h2>
@@ -81,6 +123,7 @@
       </form>
     </div>
   </section>
+  -->
 </main>
 
 <footer class="site-footer">
