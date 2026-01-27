@@ -953,4 +953,17 @@ body{
 .hidden-field{ display:none; }
 
 
+.partner-winwin { padding: 56px 0; }
+.partner-winwin .section-title { margin: 0 0 14px; font-size: 22px; }
+
+.partner-bullets{
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.partner-bullets li{
+  margin: 10px 0;
+}
+
 
